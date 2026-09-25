@@ -139,7 +139,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 122
+  m_Constraints: 112
   m_CollisionDetection: 1
 --- !u!114 &3227758530088039795
 MonoBehaviour:
@@ -152,5 +152,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35bf208738188ca4ebc27dbf8f425321, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CesarJump
+  m_EditorClassIdentifier: Assembly-CSharp::CubeJump
+  moveSpeed: 4
   jumpForce: 5
