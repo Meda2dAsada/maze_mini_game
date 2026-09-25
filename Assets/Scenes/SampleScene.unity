@@ -338,6 +338,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213610843}
   m_CullTransparentMesh: 1
+--- !u!1 &235195915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 235195916}
+  m_Layer: 0
+  m_Name: Cesar Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &235195916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235195915}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8, y: 0.55, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &267746250
 GameObject:
   m_ObjectHideFlags: 0
@@ -5525,6 +5556,7 @@ GameObject:
   - component: {fileID: 1712865193}
   - component: {fileID: 1712865192}
   - component: {fileID: 1712865191}
+  - component: {fileID: 1712865194}
   m_Layer: 5
   m_Name: Boton Cesar
   m_TagString: Untagged
@@ -5595,7 +5627,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1712865192}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1712865194}
+        m_TargetAssemblyTypeName: CubeSpawner, Assembly-CSharp
+        m_MethodName: SpawnCube
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1712865192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5634,6 +5678,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712865189}
   m_CullTransparentMesh: 1
+--- !u!114 &1712865194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712865189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8440b644bbf32c44da3e3240e50a0124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CubeSpawner
+  cubePrefab: {fileID: 3362892322391099642, guid: 82f00956cd4ec584295c0e6e84aabe94, type: 3}
+  spawnPoint: {fileID: 235195916}
 --- !u!114 &1739264693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6640,4 +6698,5 @@ SceneRoots:
   - {fileID: 726922174}
   - {fileID: 2098849474}
   - {fileID: 1179622021}
+  - {fileID: 235195916}
   - {fileID: 1601407833}
